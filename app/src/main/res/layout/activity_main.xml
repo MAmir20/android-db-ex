@@ -6,13 +6,56 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
+    <EditText
+        android:id="@+id/identifiant"
+        android:layout_width="218dp"
+        android:layout_height="68dp"
+        android:ems="10"
+        android:hint="Identifant article"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/titre"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.685" />
+
+    <EditText
+        android:id="@+id/titre"
+        android:layout_width="217dp"
+        android:layout_height="74dp"
+        android:ems="10"
+        android:hint="Titre"
+        android:inputType="textPersonName"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.283" />
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="72dp"
+        android:text="Ajouter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/titre"
+        app:layout_constraintVertical_bias="0.0" />
+
+    <Button
+        android:id="@+id/afficherButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Afficher"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.485"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btn"
+        app:layout_constraintVertical_bias="0.148" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
